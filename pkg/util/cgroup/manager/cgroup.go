@@ -49,7 +49,7 @@ const (
 
 const CgroupFSMountPoint = "/sys/fs/cgroup"
 
-const DyingMemcgThreshold int = 2000
+const DyingMemcgThreshold int = 200
 
 func ApplyMemoryWithRelativePath(relCgroupPath string, data *common.MemoryData) error {
 	if data == nil {
